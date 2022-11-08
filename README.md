@@ -1,4 +1,4 @@
-##### /app/Config/Constants.php
+#### /app/Config/Constants.php
 Added support for servers behind a load balancer, and it's will work share local app using **localhost.run** or **ngrok.io**
 Put the code below and place it at the end of the line of the file `/app/Config/Constants.php`
 ```
@@ -14,7 +14,7 @@ $base .= str_replace(basename($_SERVER['SCRIPT_NAME']),"",$_SERVER['SCRIPT_NAME'
 defined('BASE') || define('BASE', $base);
 ```
 
-##### /app/Config/App.php
+#### /app/Config/App.php
 Find line of `public $baseURL` and change the value to `BASE`
 ```
 public $baseURL = BASE;
