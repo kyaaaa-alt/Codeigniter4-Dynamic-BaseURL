@@ -10,7 +10,7 @@ if (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] == 'on') {
 }
 $base = $isSecure ? 'https' : 'http';
 $base .= "://". @$_SERVER['HTTP_HOST'].dirname($_SERVER['SCRIPT_NAME']);
-defined('BASE') || define('BASE', str_replace('\\', '', $base);
+defined('BASE') || define('BASE', str_replace('\\', '', $base));
 ```
 
 ### /app/Config/App.php
