@@ -14,7 +14,7 @@ if (
 }
 
 $protocol = $isSecure ? 'https' : 'http';
-$base = $protocol . '://' . (isset($_SERVER['HTTP_HOST']) ? $_SERVER['HTTP_HOST'] : 'localhost:8080');
+$base = $protocol . '://' . (isset($_SERVER['HTTP_HOST']) ? $_SERVER['HTTP_HOST'] : '127.0.0.1');
 $base .= str_replace(basename($_SERVER['SCRIPT_NAME']), '', $_SERVER['SCRIPT_NAME']);
 
 defined('BASE') || define('BASE', str_replace('\\', '', $base));
