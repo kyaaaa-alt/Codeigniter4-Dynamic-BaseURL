@@ -1,4 +1,4 @@
-### Updated up to Codeingiter 4.5.3
+### Updated up to Codeingiter 4.5.4
 ### /app/Config/Constants.php
 Added support for servers behind a load balancer, and it's will work share local app using **localhost.run** or **ngrok.io**
 Put the code below and place it at the end of the line of the file `/app/Config/Constants.php`
